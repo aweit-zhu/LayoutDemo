@@ -24,7 +24,7 @@
 	            border-radius: 8px;
 	            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 	            width: 500px;
-	            height: 350px;
+	            height: auto;
 	    	}
 	    </style>
 	</head>
@@ -33,20 +33,20 @@
 	    	<form class="needs-validation" novalidate>
 	    	  <h4 class="text-center">Login</h4>
 			  <div>
-			    <label for="validationCustom01" class="form-label">First name</label>
-			    <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
-			    <div class="valid-feedback">
-			      Looks good!
+			    <label for="username" class="form-label">Username</label>
+			    <input type="text" class="form-control" id="username" name="username" value="" required>
+			    <div class="invalid-feedback">
+			      請輸入帳號
 			    </div>
 			  </div>
 			  <div>
-			    <label for="validationCustom02" class="form-label">Last name</label>
-			    <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
-			    <div class="valid-feedback">
-			      Looks good!
+			    <label for="password" class="form-label">Password</label>
+			    <input type="password" class="form-control" id="password" name="password" value="" required>
+			    <div class="invalid-feedback">
+			      請輸入密碼
 			    </div>
 			  </div>
-			  <div class="d-flex justify-content-center mt-5">
+			  <div class="d-flex justify-content-center mt-3">
 			    <button class="btn btn-primary" type="submit">Submit form</button>
 			  </div>
 			</form>
