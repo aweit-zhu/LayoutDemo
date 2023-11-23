@@ -8,6 +8,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.mindrot.jbcrypt.BCrypt;
+
 @WebServlet(value = "/login")
 public class LoginServlet extends HttpServlet{
 
@@ -18,8 +20,9 @@ public class LoginServlet extends HttpServlet{
 		
 		String password = req.getParameter("password");
 		
-		// 預設用戶：username=user,password=123(ddsfdsfdsvvcbvcvdfgd134656)
-		if("user".equals(username) && "123".equals(password)) {
+		// 預設用戶：username=user,password=123($2a$10$qgVZMdNoKQ/JwXr4eQS8SOu2cYBPE9Y.ox2QRX9y.wjIKQZ7S3OBe=)
+		boolean isPasswordMatch = BCrypt.checkpw(password, "$2a$10$qgVZMdNoKQ/JwXr4eQS8SOu2cYBPE9Y.ox2QRX9y.wjIKQZ7S3OBe=");
+		if("user".equals(username) && isPasswordMatch) {
 			resp.sendRedirect("./");
 			return;
 		}
