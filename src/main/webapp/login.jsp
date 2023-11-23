@@ -41,7 +41,7 @@
 	    	  <h4 class="text-center">Login</h4>
 	    	  <%
 	    	  	if(error != null) {
-	    	  		out.print("<p>"+error+"</p>");
+	    	  		out.print("<p class='text-center text-danger fw-bold'>"+error+"</p>");
 	    	  	}
 	    	  %>
 			  <div>
