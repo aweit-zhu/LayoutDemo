@@ -18,7 +18,7 @@ public class LoginServlet extends HttpServlet{
 		
 		String password = req.getParameter("password");
 		
-		// 預設用戶：username=user,password=123
+		// 預設用戶：username=user,password=123(ddsfdsfdsvvcbvcvdfgd134656)
 		if("user".equals(username) && "123".equals(password)) {
 			resp.sendRedirect("./");
 			return;
