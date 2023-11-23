@@ -2,6 +2,7 @@ package com.example.controller;
 
 import java.io.IOException;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -28,6 +29,9 @@ public class LoginServlet extends HttpServlet{
 		}
 		
 		// 處理驗證沒有過的時候，要怎麼處理
+		req.setAttribute("error", "帳號或密碼輸入錯誤!");
+		RequestDispatcher rd = req.getRequestDispatcher("./login.jsp");
+		rd.forward(req, resp);
 		
 	}
 
