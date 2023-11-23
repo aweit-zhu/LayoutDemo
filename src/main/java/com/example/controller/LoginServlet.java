@@ -20,8 +20,8 @@ public class LoginServlet extends HttpServlet{
 		
 		String password = req.getParameter("password");
 		
-		// 預設用戶：username=user,password=123($2a$10$qgVZMdNoKQ/JwXr4eQS8SOu2cYBPE9Y.ox2QRX9y.wjIKQZ7S3OBe=)
-		boolean isPasswordMatch = BCrypt.checkpw(password, "$2a$10$qgVZMdNoKQ/JwXr4eQS8SOu2cYBPE9Y.ox2QRX9y.wjIKQZ7S3OBe=");
+		// 預設用戶：username=user,password=123($2a$10$k0t0dIE4M4etzejry03pDeNsDJ3gaT4ZWxdf6uB/ZcP/nR.w8kzvS)
+		boolean isPasswordMatch = BCrypt.checkpw(password, "$2a$10$k0t0dIE4M4etzejry03pDeNsDJ3gaT4ZWxdf6uB/ZcP/nR.w8kzvS");
 		if("user".equals(username) && isPasswordMatch) {
 			resp.sendRedirect("./");
 			return;

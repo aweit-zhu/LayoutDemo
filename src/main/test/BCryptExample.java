@@ -11,7 +11,7 @@ public class BCryptExample {
 
         // 驗證密碼
         String userPassword = "123"; // 模擬用戶輸入的密碼(明碼)
-        boolean isPasswordMatch = BCrypt.checkpw(userPassword, "$2a$10$qgVZMdNoKQ/JwXr4eQS8SOu2cYBPE9Y.ox2QRX9y.wjIKQZ7S3OBe=");
+        boolean isPasswordMatch = BCrypt.checkpw(userPassword, "$2a$10$k0t0dIE4M4etzejry03pDeNsDJ3gaT4ZWxdf6uB/ZcP/nR.w8kzvS");
         System.out.println("Password Match: " + isPasswordMatch);
 	}
 
