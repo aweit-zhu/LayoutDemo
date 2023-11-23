@@ -31,7 +31,7 @@
 	</head>
 	<body>
 	    <div class="d-flex justify-content-center align-items-center vh-100">
-	    	<form class="needs-validation" novalidate>
+	    	<form class="needs-validation" novalidate method="post" action="./login">
 	    	  <h4 class="text-center">Login</h4>
 			  <div>
 			    <label for="username" class="form-label">Username</label>
