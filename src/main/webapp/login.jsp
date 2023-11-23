@@ -5,6 +5,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Login Page</title>
+		<link rel="shortcut icon" type="image/x-icon" href="path/to/your/icon.ico">
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
 	    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
