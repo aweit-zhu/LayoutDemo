@@ -48,7 +48,7 @@
 			    </div>
 			  </div>
 			  <div class="d-flex justify-content-center mt-3">
-			    <button class="btn btn-primary" type="submit">Submit form</button>
+			    <button class="btn btn-primary" type="submit">登入</button>
 			  </div>
 			</form>
 	    </div>
