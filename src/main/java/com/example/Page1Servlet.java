@@ -16,7 +16,7 @@ public class Page1Servlet extends HttpServlet{
 		System.out.println("Hello");
 		
 		String email = req.getParameter("email");
-		System.out.println(email); // aweit123
+		System.out.println(email); // aweit123456
 	}
 
 }
