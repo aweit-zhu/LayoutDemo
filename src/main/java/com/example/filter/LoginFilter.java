@@ -39,6 +39,4 @@ public class LoginFilter extends HttpFilter{
 		
 		chain.doFilter(request, response);
 	}
-
-	
 }
