@@ -20,5 +20,3 @@ public class Page1Servlet extends HttpServlet{
 	}
 
 }
-
-
