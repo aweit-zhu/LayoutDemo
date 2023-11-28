@@ -30,7 +30,7 @@ public class LoginServlet extends HttpServlet{
 			HttpSession session = req.getSession();
 			session.setAttribute("isLogin", true);
 			session.setAttribute("username", username);
-			
+			session.setMaxInactiveInterval(60 * 60 * 1); // 1小時：如果在指定的一段時間內，沒有任何的請求進來，session會失效。
 			resp.sendRedirect("./");
 			return;
 		}
